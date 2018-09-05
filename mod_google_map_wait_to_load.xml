@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.8" client="site" method="upgrade">
+	<name>Google Map that loads on click not page load</name>
+	<creationDate>19/07/2018</creationDate>
+	<author>Mary McGinty</author>
+	<authorEmail>info@kindofuseful.com</authorEmail>
+	<authorUrl>https://www.kindofuseful.com</authorUrl>
+	<copyright>Copyright Kind of Useful</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0.9</version>
+	<description>MOD_GOOGLE_MAP_WAIT_TO_LOAD_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_google_map_wait_to_load">mod_google_map_wait_to_load.php</filename>
+		<folder>media</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename>mod_google_map_wait_to_load.xml</filename>
+	</files>
+
+	<media destination="mod_google_map_wait_to_load" folder="media">
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="mod_google_map_wait_to_load">https://www.kindofuseful.com/downloads/joomla/xml_updaters/mod_google_map_wait_to_load/update.xml</server>
+	</updateservers>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="dynamic_map_url"
+					type="url"
+					label="MOD_GOOGLE_MAP_WAIT_TO_LOAD_DYANAMIC_MAP_URL_LABEL"
+					description="MOD_GOOGLE_MAP_WAIT_TO_LOAD_DYANAMIC_MAP_URL_DESCRIPTION"
+					hint="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3201.276200932929!2d-116.3981860844109!3d36.64380548418661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c70baaaaaaaaab%3A0x9f97481bfe85a9d8!2sArea+51+Alien+Center!5e0!3m2!1sen!2suk!4v1532025243700"
+					filter="url"
+					validate="url"
+				/>
+				<field name="dynamic_map_zoom" type="list" default="2" label="MOD_GOOGLE_MAP_WAIT_TO_LOAD_DYNAMIC_ZOOM" description="">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</field>
+				<field
+						name="static_map_place"
+						type="text"
+						label="MOD_GOOGLE_MAP_WAIT_TO_LOAD_STATIC_MAP_PLACE_LABEL"
+						description="MOD_GOOGLE_MAP_WAIT_TO_LOAD_STATIC_MAP_PLACE_DESCRIPTION"
+						hint="Area 51"
+				/>
+				<field
+						name="google_maps_static_width"
+						type="text"
+						label="MOD_GOOGLE_MAP_WAIT_TO_LOAD_GOOGLE_MAPS_STATIC_WIDTH_LABEL"
+						description="MOD_GOOGLE_MAP_WAIT_TO_LOAD_GOOGLE_MAPS_STATIC_WIDTH_DESCRIPTION"
+				/>
+				<field
+						name="google_maps_static_height"
+						type="text"
+						label="MOD_GOOGLE_MAP_WAIT_TO_LOAD_GOOGLE_MAPS_STATIC_HEIGHT_LABEL"
+						description="MOD_GOOGLE_MAP_WAIT_TO_LOAD_GOOGLE_MAPS_STATIC_HEIGHT_DESCRIPTION"
+				/>
+				<field name="static_map_zoom" type="list" default="2" label="MOD_GOOGLE_MAP_WAIT_TO_LOAD_STATIC_ZOOM" description="">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</field>
+				<field
+					name="google_maps_static_api_key"
+					type="text"
+					label="MOD_GOOGLE_MAP_WAIT_TO_LOAD_GOOGLE_MAPS_STATIC_API_KEY_LABEL"
+					description="MOD_GOOGLE_MAP_WAIT_TO_LOAD_GOOGLE_MAPS_STATIC_API_KEY_DESCRIPTION"
+			/>
+			</fieldset>
+			<fieldset
+					name="advanced">
+				<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
