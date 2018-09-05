@@ -7,7 +7,7 @@
 	<authorUrl>https://www.kindofuseful.com</authorUrl>
 	<copyright>Copyright Kind of Useful</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>1.0.9</version>
+	<version>1.0.10</version>
 	<description>MOD_GOOGLE_MAP_WAIT_TO_LOAD_XML_DESCRIPTION</description>
 
 	<files>
@@ -64,12 +64,14 @@
 						type="text"
 						label="MOD_GOOGLE_MAP_WAIT_TO_LOAD_GOOGLE_MAPS_STATIC_WIDTH_LABEL"
 						description="MOD_GOOGLE_MAP_WAIT_TO_LOAD_GOOGLE_MAPS_STATIC_WIDTH_DESCRIPTION"
+						default="600"
 				/>
 				<field
 						name="google_maps_static_height"
 						type="text"
 						label="MOD_GOOGLE_MAP_WAIT_TO_LOAD_GOOGLE_MAPS_STATIC_HEIGHT_LABEL"
 						description="MOD_GOOGLE_MAP_WAIT_TO_LOAD_GOOGLE_MAPS_STATIC_HEIGHT_DESCRIPTION"
+						default="300"
 				/>
 				<field name="static_map_zoom" type="list" default="2" label="MOD_GOOGLE_MAP_WAIT_TO_LOAD_STATIC_ZOOM" description="">
 					<option value="1">1</option>
