@@ -1,7 +1,6 @@
 .mod_google_map_wait_to_load {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%;
 }
 
 #my-fast-map img {
