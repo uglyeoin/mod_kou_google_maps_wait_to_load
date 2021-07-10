@@ -34,7 +34,7 @@ if (file_exists($mediaUrl . '/js/' . $moduleName . ".js") && filesize($mediaUrl 
 // Access to module parameters
 $dynamic_map            			= $params->get('dynamic_map_url');
 $dynamic_map_zoom       			= $params->get('dynamic_map_zoom');
-$static_map_place       			= $params->get('static_map_place');
+$static_map_place       			= rawurlencode($params->get('static_map_place'));
 $static_map_zoom        			= $params->get('static_map_zoom');
 $googleMapsStaticApiKey 			= $params->get('google_maps_static_api_key');
 $googleMapsStaticUrlSigningSecret	= $params->get('google_maps_static_url_signing_secret');
